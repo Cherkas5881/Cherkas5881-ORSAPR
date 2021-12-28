@@ -29,5 +29,10 @@ namespace PluginGUI
                 //...
             }
         }
+
+        private void PluginGUI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

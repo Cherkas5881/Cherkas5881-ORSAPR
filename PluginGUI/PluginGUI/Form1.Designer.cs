@@ -56,7 +56,7 @@ namespace PluginGUI
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PluginGUI.Properties.Resources.Bookcase;
-            this.pictureBox1.Location = new System.Drawing.Point(456, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(504, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(112, 314);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -65,14 +65,14 @@ namespace PluginGUI
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(146, 12);
+            this.numericUpDown1.Location = new System.Drawing.Point(192, 12);
             this.numericUpDown1.Maximum = new decimal(new int[] {
-            300,
+            3000,
             0,
             0,
             0});
             this.numericUpDown1.Minimum = new decimal(new int[] {
-            50,
+            500,
             0,
             0,
             0});
@@ -80,16 +80,16 @@ namespace PluginGUI
             this.numericUpDown1.Size = new System.Drawing.Size(150, 27);
             this.numericUpDown1.TabIndex = 1;
             this.numericUpDown1.Value = new decimal(new int[] {
-            50,
+            500,
             0,
             0,
             0});
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(146, 55);
+            this.numericUpDown2.Location = new System.Drawing.Point(192, 55);
             this.numericUpDown2.Maximum = new decimal(new int[] {
-            200,
+            2000,
             0,
             0,
             0});
@@ -99,14 +99,14 @@ namespace PluginGUI
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(146, 98);
+            this.numericUpDown3.Location = new System.Drawing.Point(192, 98);
             this.numericUpDown3.Maximum = new decimal(new int[] {
-            70,
+            700,
             0,
             0,
             0});
             this.numericUpDown3.Minimum = new decimal(new int[] {
-            20,
+            200,
             0,
             0,
             0});
@@ -114,16 +114,16 @@ namespace PluginGUI
             this.numericUpDown3.Size = new System.Drawing.Size(150, 27);
             this.numericUpDown3.TabIndex = 3;
             this.numericUpDown3.Value = new decimal(new int[] {
-            20,
+            200,
             0,
             0,
             0});
             // 
             // numericUpDown4
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(146, 144);
+            this.numericUpDown4.Location = new System.Drawing.Point(192, 144);
             this.numericUpDown4.Maximum = new decimal(new int[] {
-            200,
+            2000,
             0,
             0,
             0});
@@ -133,14 +133,9 @@ namespace PluginGUI
             // 
             // numericUpDown5
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(146, 188);
-            this.numericUpDown5.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
+            this.numericUpDown5.Location = new System.Drawing.Point(192, 188);
             this.numericUpDown5.Minimum = new decimal(new int[] {
-            2,
+            20,
             0,
             0,
             0});
@@ -148,18 +143,18 @@ namespace PluginGUI
             this.numericUpDown5.Size = new System.Drawing.Size(150, 27);
             this.numericUpDown5.TabIndex = 5;
             this.numericUpDown5.Value = new decimal(new int[] {
-            2,
+            20,
             0,
             0,
             0});
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(146, 244);
+            this.button1.Location = new System.Drawing.Point(192, 258);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 49);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Построить чертеж";
+            this.button1.Text = "Построить модель";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -204,51 +199,51 @@ namespace PluginGUI
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 190);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 20);
+            this.label5.Size = new System.Drawing.Size(174, 20);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Толщина шкафа:";
+            this.label5.Text = "Толщина стенки шкафа:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(302, 14);
+            this.label6.Location = new System.Drawing.Point(348, 12);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(115, 20);
+            this.label6.Size = new System.Drawing.Size(135, 20);
             this.label6.TabIndex = 12;
-            this.label6.Text = "от 50 до 300 см";
+            this.label6.Text = "от 500 до 3000 мм";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(302, 57);
+            this.label7.Location = new System.Drawing.Point(348, 55);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(134, 20);
+            this.label7.Size = new System.Drawing.Size(146, 20);
             this.label7.TabIndex = 13;
-            this.label7.Text = "не больше 200 см";
+            this.label7.Text = "не больше 2000 мм";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(302, 100);
+            this.label8.Location = new System.Drawing.Point(348, 98);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 20);
+            this.label8.Size = new System.Drawing.Size(127, 20);
             this.label8.TabIndex = 14;
-            this.label8.Text = "от 20 до 70 см";
+            this.label8.Text = "от 200 до 700 мм";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(302, 190);
+            this.label9.Location = new System.Drawing.Point(348, 188);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 20);
+            this.label9.Size = new System.Drawing.Size(119, 20);
             this.label9.TabIndex = 15;
-            this.label9.Text = "от 2 до 10 см";
+            this.label9.Text = "от 20 до 100 мм";
             // 
             // PluginGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 338);
+            this.ClientSize = new System.Drawing.Size(628, 338);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -267,6 +262,7 @@ namespace PluginGUI
             this.Controls.Add(this.pictureBox1);
             this.Name = "PluginGUI";
             this.Text = "Плагин";
+            this.Load += new System.EventHandler(this.PluginGUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();

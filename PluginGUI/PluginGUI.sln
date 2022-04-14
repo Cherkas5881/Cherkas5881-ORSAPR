@@ -3,18 +3,64 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginGUI", "PluginGUI\PluginGUI.csproj", "{4877D8DD-7D6B-47C4-9BC3-5F7D681EC079}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{40B21739-A9BF-4135-A91F-D908ADF6FDB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KompasWrapper", "KompasWrapper\KompasWrapper.csproj", "{5C7ECD80-9A9F-4BFE-BA14-3FC1D38EE9AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{57FD2563-30BB-4A70-9318-A7F989A08476}"
+	ProjectSection(SolutionItems) = preProject
+		Common\Kompas6API2D5COM.dll = Common\Kompas6API2D5COM.dll
+		Common\Kompas6API3D5COM.dll = Common\Kompas6API3D5COM.dll
+		Common\Kompas6API5.dll = Common\Kompas6API5.dll
+		Common\Kompas6Constants.dll = Common\Kompas6Constants.dll
+		Common\Kompas6Constants3D.dll = Common\Kompas6Constants3D.dll
+		Common\KompasAPI7.dll = Common\KompasAPI7.dll
+		Common\KompasLibrary.dll = Common\KompasLibrary.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginUI", "PluginUI\PluginUI.csproj", "{6386E50A-0834-4D93-9EB2-369126397AF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCore", "TestCore\TestCore.csproj", "{BD6CA7DF-7F3D-4D55-AFA1-90D2BFBA6626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StressTesting", "StressTesting\StressTesting.csproj", "{0619FB5D-CF08-4296-9C64-CFC9773B92C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		UnitTests|Any CPU = UnitTests|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4877D8DD-7D6B-47C4-9BC3-5F7D681EC079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4877D8DD-7D6B-47C4-9BC3-5F7D681EC079}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4877D8DD-7D6B-47C4-9BC3-5F7D681EC079}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4877D8DD-7D6B-47C4-9BC3-5F7D681EC079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B21739-A9BF-4135-A91F-D908ADF6FDB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40B21739-A9BF-4135-A91F-D908ADF6FDB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40B21739-A9BF-4135-A91F-D908ADF6FDB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40B21739-A9BF-4135-A91F-D908ADF6FDB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40B21739-A9BF-4135-A91F-D908ADF6FDB6}.UnitTests|Any CPU.ActiveCfg = Release|Any CPU
+		{40B21739-A9BF-4135-A91F-D908ADF6FDB6}.UnitTests|Any CPU.Build.0 = Release|Any CPU
+		{5C7ECD80-9A9F-4BFE-BA14-3FC1D38EE9AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7ECD80-9A9F-4BFE-BA14-3FC1D38EE9AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7ECD80-9A9F-4BFE-BA14-3FC1D38EE9AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7ECD80-9A9F-4BFE-BA14-3FC1D38EE9AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C7ECD80-9A9F-4BFE-BA14-3FC1D38EE9AE}.UnitTests|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7ECD80-9A9F-4BFE-BA14-3FC1D38EE9AE}.UnitTests|Any CPU.Build.0 = Release|Any CPU
+		{6386E50A-0834-4D93-9EB2-369126397AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6386E50A-0834-4D93-9EB2-369126397AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6386E50A-0834-4D93-9EB2-369126397AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6386E50A-0834-4D93-9EB2-369126397AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6386E50A-0834-4D93-9EB2-369126397AF8}.UnitTests|Any CPU.ActiveCfg = Release|Any CPU
+		{6386E50A-0834-4D93-9EB2-369126397AF8}.UnitTests|Any CPU.Build.0 = Release|Any CPU
+		{BD6CA7DF-7F3D-4D55-AFA1-90D2BFBA6626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6CA7DF-7F3D-4D55-AFA1-90D2BFBA6626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6CA7DF-7F3D-4D55-AFA1-90D2BFBA6626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6CA7DF-7F3D-4D55-AFA1-90D2BFBA6626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD6CA7DF-7F3D-4D55-AFA1-90D2BFBA6626}.UnitTests|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6CA7DF-7F3D-4D55-AFA1-90D2BFBA6626}.UnitTests|Any CPU.Build.0 = Release|Any CPU
+		{0619FB5D-CF08-4296-9C64-CFC9773B92C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0619FB5D-CF08-4296-9C64-CFC9773B92C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0619FB5D-CF08-4296-9C64-CFC9773B92C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0619FB5D-CF08-4296-9C64-CFC9773B92C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0619FB5D-CF08-4296-9C64-CFC9773B92C8}.UnitTests|Any CPU.ActiveCfg = UnitTests|Any CPU
+		{0619FB5D-CF08-4296-9C64-CFC9773B92C8}.UnitTests|Any CPU.Build.0 = UnitTests|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
